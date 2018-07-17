@@ -15,7 +15,7 @@ contract Patient
 
     PatientData[] public AllPatient;
     address public owner;
-    mapping(uint24=>mapping(uint24=>bool)) SharedInformation;
+    mapping(uint24=>mapping(uint24=>bool)) SharedInformation; // it Saves the doctor ids against patient ids who holds right to see the information
     
     modifier onlyOwner
     {
